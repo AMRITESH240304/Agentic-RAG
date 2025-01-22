@@ -1,0 +1,15 @@
+# src/latest_ai_development/config/tasks.yaml
+research_task:
+  description: >
+    Retrieve the most relevant information from the available sources for the user query: {topic}
+  expected_output: >
+    The most relevant information in form of text as retrieved from the sources.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Synthesize the final response for the user query: {topic}
+  expected_output: >
+    A concise and coherent response based on the retrieved infromation from the right source for the user query: {topic}. If you are not ble to retrieve the information then respond with "I'm sorry, I couldn't find the information you're looking for."
+  agent: reporting_analyst
+  output_file: report.md
