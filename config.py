@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     SERPER_API_KEY: str
     GROQ_API_KEY: str
     GEMINI_API_KEY: str
+    NEO4J_PASSWORD:str
+    NEO4J_URI:str
 
     class Config:
         env_file = ".env"
